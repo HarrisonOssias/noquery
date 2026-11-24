@@ -1,0 +1,27 @@
+{
+  "name": "@noquery/server",
+  "version": "0.1.0",
+  "description": "HTTP service that exposes a noquery engine to non-JavaScript backends (Python, Go, Java, ...).",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "noquery-server": "./dist/bin.js"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@noquery/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@noquery/postgres": "workspace:*"
+  }
+}

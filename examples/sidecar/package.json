@@ -1,0 +1,18 @@
+{
+  "name": "noquery-sidecar-example",
+  "private": true,
+  "type": "module",
+  "description": "Runs noquery as an HTTP sidecar so Python (or any language) can call it.",
+  "scripts": {
+    "start": "node ../../packages/server/dist/bin.js noquery.config.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.13.0",
+    "@electric-sql/pglite": "^0.6.0",
+    "@noquery/anthropic": "workspace:*",
+    "@noquery/core": "workspace:*",
+    "@noquery/postgres": "workspace:*",
+    "@noquery/server": "workspace:*",
+    "pg": "^8.23.1"
+  }
+}

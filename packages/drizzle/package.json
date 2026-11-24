@@ -1,0 +1,28 @@
+{
+  "name": "@noquery/drizzle",
+  "version": "0.1.0",
+  "description": "Drizzle ORM schema introspection for noquery.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@noquery/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "drizzle-orm": ">=0.40.0"
+  },
+  "devDependencies": {
+    "drizzle-orm": "^0.45.4"
+  }
+}

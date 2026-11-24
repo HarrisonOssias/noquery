@@ -1,0 +1,17 @@
+{
+  "name": "@noquery/postgres",
+  "version": "0.1.0",
+  "description": "PostgreSQL dialect, executors and catalog introspection for noquery.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "sideEffects": false,
+  "dependencies": { "@noquery/core": "workspace:*" }
+}
